@@ -5,31 +5,31 @@ import '../components/WorkCard.css';
 
 const projects = [
   {
-    id: 'project1',
+    id: 'DfT',
     client: 'Department for Transport',
     description: 'Discovery/Alpha into adding accessibility data to the national database of public transport stops.',
     image: '/images/DFT_thumbnail.jpg' // Thumbnail for the project
   },
   {
-    id: 'project2',
+    id: 'TPR',
     client: 'The Pensions Regulator',
     description: 'Discovery work to learn about user needs for a new service: sharing more pensions data with TPR.',
     image: '/images/TPR_thumbnail.jpg'
   },
   {
-    id: 'project3',
+    id: 'GDS',
     client: 'Government Digital Service',
     description: 'Understanding and tackling the key problems with Whitehall Publisher: the tool used to put content on GOV.UK.',
     image: '/images/GDS_thumbnail.jpg'
   },
   {
-    id: 'project4',
+    id: 'CA',
     client: 'Citizens Advice',
     description: 'Understanding the behaviour and motivations of Citizens Advice advisers. Understanding advisers\' journeys in finding local service information for clients.',
     image: '/images/CA_thumbnail.jpg'
   },
   {
-    id: 'project5',
+    id: 'BEIS',
     client: 'BEIS',
     description: 'User research to understand the user needs of those visiting SEA: Simple Energy Advice.',
     image: '/images/BEIS_thumbnail.jpg'
