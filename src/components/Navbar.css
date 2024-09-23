@@ -1,0 +1,71 @@
+/* Style for the Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white; /* White background */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: black; /* Black text for the brand */
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links ul li {
+  margin-left: 20px;
+}
+
+.navbar-links ul li a {
+  text-decoration: none;
+  color: black; /* Black text for the links */
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.navbar-links ul li a:hover {
+  color: #705574; /* Change color on hover */
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-bottom: 8px; /* Space between the text and underline */
+}
+
+.nav-item.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.nav-item:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #705574;
+  transition: width 0.3s ease-in-out;
+}
