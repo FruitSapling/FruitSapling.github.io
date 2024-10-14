@@ -34,7 +34,12 @@ const projects = [
     description: 'User research to understand the user needs of those visiting SEA: Simple Energy Advice.',
     image: '/images/BEIS_thumbnail.jpg'
   },
-  
+  {
+    id: 'SJ23',
+    client: 'Service Jam 2023',
+    description: 'Running Service Jam 2023 in Newcastle: a 2-day event bringing people together to design a service that solves a real-world problem.',
+    image: '/images/SJ23_thumbnail.png'
+  },
   
   // Add more projects as needed
 ];
