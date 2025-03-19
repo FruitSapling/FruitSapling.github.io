@@ -1,65 +1,58 @@
-.work {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  /* Work page styles */
+/* Work Page Container */
 .work-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 40px;
-    justify-content: center;
-    align-items: start;
-    max-width: 1200px;
-    margin: 0 auto; /* Center the grid */
-    box-sizing: border-box;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 40px;
+  justify-content: center;
+}
 
-  
-  .project-card-link {
-    text-decoration: none;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .project-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 80%; /* Adjust the width of the card */
-    transition: transform 0.2s;
-  }
-  
-  .project-card:hover {
-    transform: scale(1.02);
-  }
-  
-  .project-card img {
-    width: 60%; /* Adjust this value based on how much space you want the image to take */
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .project-details {
-    flex: 1;
-    padding-left: 20px;
-  }
-  
-  .project-details h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .project-details p {
-    font-size: 16px;
-    color: #555;
-  }
-  
+/* Card Styles */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* Card Content */
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content */
+  text-align: center;
+  gap: 10px;
+}
+
+/* Title (Bold & Emoji) */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600; /* Semi-bold */
+  margin-bottom: 5px;
+}
+
+/* Description */
+.card-description {
+  font-size: 0.9rem;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #555; /* Slightly softer color for readability */
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover .card-title {
+  color: #705574; /* Slightly change color on hover */
+}

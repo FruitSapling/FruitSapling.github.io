@@ -23,7 +23,7 @@
   width: 100%;
   height: 50%;
   object-fit:contain; /* Ensures the image covers the area without distortion */
-  object-position: left; /* Center the image in the card */
+  object-position: center; /* Center the image in the card */
   border-bottom: 1px solid #eee;
   padding: 15px;
   box-sizing: border-box; /* Ensure padding is included in width/height */
@@ -31,7 +31,7 @@
 
 /* Card content */
 .card-content {
-  font-family: 'Cabin';
+  font-family: 'Montserrat';
   color: #373B44;
   font-weight: 400;
   padding: 15px;
