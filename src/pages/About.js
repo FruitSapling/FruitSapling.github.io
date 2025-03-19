@@ -26,6 +26,8 @@ const About = () => {
           create feasible, user-friendly designs that remove friction and enhance usability.
         </p>
         <Link to="/work" className="work-link">View My Work</Link>
+        <br></br>
+        <Link to="/cv" className="work-link">View My CV</Link>
       </div>
     </div>
   );

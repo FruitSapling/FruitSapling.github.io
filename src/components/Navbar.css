@@ -1,10 +1,10 @@
-/* Style for the Navbar */
+/* Navbar container */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: white; /* White background */
+  background-color: white;
   position: sticky;
   top: 0;
   width: 100%;
@@ -12,12 +12,30 @@
   z-index: 10;
 }
 
-.navbar-brand {
+/* Style for the navbar brand link */
+.brand-link {
+  text-decoration: none !important; /* Remove underline */
+  color: black !important; /* Always stays black */
   font-size: 24px;
   font-weight: bold;
-  color: black; /* Black text for the brand */
+  transition: color 0.3s ease; /* Smooth transition */
 }
 
+/* Ensure the brand link stays black even after clicking */
+.brand-link:visited,
+.brand-link:focus,
+.brand-link:active {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+/* Change color on hover */
+.brand-link:hover {
+  color: #705574 !important;
+  text-decoration: none !important;
+}
+
+/* Navigation links container */
 .navbar-links ul {
   list-style: none;
   display: flex;
@@ -29,24 +47,34 @@
   margin-left: 20px;
 }
 
+/* Default link styles */
 .navbar-links ul li a {
   text-decoration: none;
-  color: black; /* Black text for the links */
+  color: black; /* Links always black */
   font-size: 18px;
   font-weight: normal;
+  transition: color 0.3s ease;
 }
 
+/* Remove the purple visited color */
+.navbar-links ul li a:visited {
+  color: black !important; /* Ensures clicked links remain black */
+}
+
+/* Hover effect */
 .navbar-links ul li a:hover {
-  color: #705574; /* Change color on hover */
+  color: #705574 !important;
 }
 
+/* Active and hover underline effect */
 .nav-item {
   text-decoration: none;
   color: black;
   position: relative;
-  padding-bottom: 8px; /* Space between the text and underline */
+  padding-bottom: 8px; /* Space between text and underline */
 }
 
+/* Active state - black underline */
 .nav-item.active::after {
   content: '';
   position: absolute;
@@ -58,7 +86,7 @@
   transition: width 0.3s ease-in-out;
 }
 
-/* Hover effect */
+/* Hover effect - purple underline */
 .nav-item:hover::after {
   content: '';
   position: absolute;

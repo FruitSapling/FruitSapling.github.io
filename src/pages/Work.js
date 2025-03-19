@@ -8,51 +8,55 @@ const projects = [
     id: 'DfT',
     client: 'Department for Transport',
     description: 'Discovery/Alpha into adding accessibility data to the national database of public transport stops.',
-    image: '/images/DFT_thumbnail.jpg' // Thumbnail for the project
+    image: '/images/DFT_thumbnail.jpg',
+    link: '/project/DfT' // ✅ Updated link
   },
   {
     id: 'TPR',
     client: 'The Pensions Regulator',
     description: 'Discovery work to learn about user needs for a new service: sharing more pensions data with TPR.',
-    image: '/images/TPR_thumbnail.jpg'
+    image: '/images/TPR_thumbnail.jpg',
+    link: '/project/TPR'
   },
   {
     id: 'GDS',
     client: 'Government Digital Service',
     description: 'Understanding and tackling the key problems with Whitehall Publisher: the tool used to put content on GOV.UK.',
-    image: '/images/GDS_thumbnail.jpg'
+    image: '/images/GDS_thumbnail.jpg',
+    link: '/project/GDS'
   },
   {
     id: 'CA',
     client: 'Citizens Advice',
     description: 'Understanding the behaviour and motivations of Citizens Advice advisers. Understanding advisers\' journeys in finding local service information for clients.',
-    image: '/images/CA_thumbnail.jpg'
+    image: '/images/CA_thumbnail.jpg',
+    link: '/project/CA'
   },
   {
     id: 'BEIS',
     client: 'BEIS',
     description: 'User research to understand the user needs of those visiting SEA: Simple Energy Advice.',
-    image: '/images/BEIS_thumbnail.jpg'
+    image: '/images/BEIS_thumbnail.jpg',
+    link: '/project/BEIS'
   },
   {
     id: 'SJ23',
     client: 'Service Jam 2023',
     description: 'Running Service Jam 2023 in Newcastle: a 2-day event bringing people together to design a service that solves a real-world problem.',
-    image: '/images/SJ23_thumbnail.png'
+    image: '/images/SJ23_thumbnail.png',
+    link: '/project/SJ23'
   },
-  
-  // Add more projects as needed
 ];
 
 const Work = () => {
   return (
     <div className="work-container">
       {projects.map(project => (
-        <Link to={`/project/${project.id}`} key={project.id} className="card">
-            <img src={project.image} alt={project.client} />
-            <div className="card-content">
-              <p>{project.description}</p>
-            </div>
+        <Link to={project.link} key={project.id} className="card">
+          <img src={project.image} alt={project.client} />
+          <div className="card-content">
+            <p>{project.description}</p>
+          </div>
         </Link>
       ))}
     </div>
