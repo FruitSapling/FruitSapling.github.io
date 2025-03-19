@@ -14,10 +14,26 @@ const Navbar = () => {
         <ul>
           <li>
             <Link 
+              to="/about" 
+              className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link 
               to="/work" 
               className={`nav-item ${location.pathname === '/work' ? 'active' : ''}`}
             >
               Work
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="/cv" 
+              className={`nav-item ${location.pathname === '/cv' ? 'active' : ''}`}
+            >
+              CV
             </Link>
           </li>
           <li>
