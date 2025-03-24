@@ -5,7 +5,7 @@ const TPR = () => {
   return (
     <div className="project-container">
 
-      <div className="project-content">
+      <div className="project-content"> 
         <h1>🖋️ Fixing Whitehall Publisher</h1>
         <p>
           Reducing friction for civil servants updating GOV.UK.

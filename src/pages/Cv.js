@@ -8,7 +8,7 @@ const Cv = () => {
   return (
     <div className="cv-container">
       <h1>My CV</h1>
-      <a href={cvPdf} download="My_CV.pdf" className="download-button">Download CV</a>
+      <a href={cvPdf} download="Willem van Gerwen CV.pdf" className="download-button">Download CV</a>
       <br></br>
       <embed src={cvPdf} type="application/pdf" className="cv-viewer" />
     </div>
