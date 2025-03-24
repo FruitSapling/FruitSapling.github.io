@@ -15,12 +15,14 @@ const TPR = () => {
         </p>
       </div>
 
+      {/* Download Button */}
       <a href={`${process.env.PUBLIC_URL}/projectCaseStudies/GDS-case-study-together.pdf`} 
-         download="GDS-case-study-together.pdf" 
+         download="GDS-case-study.pdf" 
          className="download-button">
         Download Case Study (recommended)
       </a>
 
+      {/* PDF Viewer */}
       <embed src={`${process.env.PUBLIC_URL}/projectCaseStudies/GDS-case-study-split.pdf`} 
         type="application/pdf" 
         className="pdf-viewer" 
