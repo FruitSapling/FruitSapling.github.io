@@ -1,7 +1,7 @@
+// src/pages/Work.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Work.css';
-import '../components/WorkCard.css';
+import '../WorkCard.css'; // Consolidated card/container styling
 
 const projects = [
   {
@@ -54,19 +54,50 @@ const projects = [
   },
 ];
 
+// Define which projects are featured by their IDs.
+const featuredProjectIds = ['DfT', 'GDS', 'SJ23'];
+const featuredProjects = projects.filter(project =>
+  featuredProjectIds.includes(project.id)
+);
+const otherProjects = projects.filter(project =>
+  !featuredProjectIds.includes(project.id)
+);
+
 const Work = () => {
   return (
-    <div className="work-container">
-      {projects.map((project) => (
-        <Link to={project.link} key={project.id} className="card">
-          <img src={project.image} alt={project.client} />
-          <div className="card-content">
-            <p className="card-title"><strong>{project.title}</strong></p>
-            <p className="card-description">{project.description}</p>
-          </div>
-        </Link>
-      ))}
-    </div>
+    <>
+      {/* Featured Projects Section */}
+      <div className="featured-projects-section">
+        <h2 style={{ textAlign: 'center' }}>Featured Projects</h2>
+        <div className="work-container">
+          {featuredProjects.map((project) => (
+            <Link to={project.link} key={project.id} className="card">
+              <img src={project.image} alt={project.client} />
+              <div className="card-content">
+                <p className="card-title"><strong>{project.title}</strong></p>
+                <p className="card-description">{project.description}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* Other Projects Section */}
+      <div className="other-projects-section">
+        <h2 style={{ textAlign: 'center' }}>Other Projects</h2>
+        <div className="work-container">
+          {otherProjects.map((project) => (
+            <Link to={project.link} key={project.id} className="card">
+              <img src={project.image} alt={project.client} />
+              <div className="card-content">
+                <p className="card-title"><strong>{project.title}</strong></p>
+                <p className="card-description">{project.description}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

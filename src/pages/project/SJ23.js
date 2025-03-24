@@ -11,7 +11,7 @@ const SJ23 = () => {
           Solving real-world challenges at Service Jam Newcastle.
         </p>
         <p className="project-summary">
-          Service Jam 2023 was an intensive two-day event where multidisciplinary teams came together to rapidly prototype and test new service concepts. This event fostered creativity, collaboration, and user-centered design thinking. The outcome was a set of innovative service prototypes addressing real-world challenges.
+          I hosted Service Jam 2023 alongside another co-host in Newcastle. Service Jam 2023 was an intensive two-day event where multidisciplinary teams came together to rapidly prototype and test new service concepts. This event fostered creativity, collaboration, and user-centered design thinking. The outcome was a set of innovative service prototypes addressing real-world challenges. I put together this video to summarise the event.
         </p>
       </div>
 

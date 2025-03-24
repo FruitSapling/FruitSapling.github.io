@@ -18,7 +18,7 @@ const TPR = () => {
       <a href={`${process.env.PUBLIC_URL}/projectCaseStudies/TPR-case-study-together.pdf`} 
          download="TPR-case-study.pdf" 
          className="download-button">
-        Download Case Study
+        Download Case Study (recommended)
       </a>
 
       <embed src={`${process.env.PUBLIC_URL}/projectCaseStudies/TPR-case-study-split.pdf`} 

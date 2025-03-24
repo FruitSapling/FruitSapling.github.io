@@ -18,7 +18,7 @@ const BEIS = () => {
       <a href={`${process.env.PUBLIC_URL}/projectCaseStudies/BEIS-case-study-together.pdf`} 
          download="BEIS-case-study.pdf" 
          className="download-button">
-        Download Case Study
+        Download Case Study (recommended)
       </a>
 
       <embed src={`${process.env.PUBLIC_URL}/projectCaseStudies/BEIS-case-study-split.pdf`} 

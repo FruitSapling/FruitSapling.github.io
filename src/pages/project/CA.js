@@ -18,7 +18,7 @@ const CA = () => {
       <a href={`${process.env.PUBLIC_URL}/projectCaseStudies/citizens-advice-case-study-together.pdf`} 
          download="citizens-advice-case-study.pdf" 
          className="download-button">
-        Download Case Study
+        Download Case Study (recommended)
       </a>
 
       <embed src={`${process.env.PUBLIC_URL}/projectCaseStudies/citizens-advice-case-study-split.pdf`} 

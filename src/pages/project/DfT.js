@@ -20,7 +20,7 @@ const DfT = () => {
       <a href={`${process.env.PUBLIC_URL}/projectCaseStudies/DfT-case-study-together.pdf`} 
          download="DfT-case-study.pdf" 
          className="download-button">
-        Download Case Study
+        Download Case Study (recommended)
       </a>
 
       {/* PDF Viewer */}
