@@ -49,11 +49,11 @@ const About = () => {
             <p>
               I'm a UX Designer with a software development background,
               bridging the gap between design and engineering. Strong in user
-              research and close collaboration with developers...
+              research and close collaboration with developers.
             </p>
             <p>
               I have proven experience uncovering and prioritizing real user
-              needs through a wide range of research methods...
+              needs through a wide range of research methods.
             </p>
           </div>
           <div className="about-buttons">
