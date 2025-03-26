@@ -37,6 +37,14 @@ const projects = [
     link: '/project/CA'
   },
   {
+    id: 'CABO',
+    client: 'Cabinet Office',
+    title: '⚙️ Automating Applications',
+    description: 'Saving employees thousands of hours each month.',
+    image: '/images/CABO_thumbnail.png',
+    link: '/project/CABO'
+  },
+  {
     id: 'BEIS',
     client: 'BEIS',
     title: '⚡ Making Energy Advice Simple',

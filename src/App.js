@@ -13,6 +13,7 @@ import DfT from './pages/project/DfT';
 import TPR from './pages/project/TPR';
 import GDS from './pages/project/GDS';
 import CA from './pages/project/CA';
+import CABO from './pages/project/CABO';
 import BEIS from './pages/project/BEIS';
 import SJ23 from './pages/project/SJ23';
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/project/TPR" element={<TPR />} />
         <Route path="/project/GDS" element={<GDS />} />
         <Route path="/project/CA" element={<CA />} />
+        <Route path="/project/CABO" element={<CABO />} />
         <Route path="/project/BEIS" element={<BEIS />} />
         <Route path="/project/SJ23" element={<SJ23 />} />
       </Routes>
