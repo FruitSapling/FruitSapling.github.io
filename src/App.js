@@ -32,9 +32,11 @@ function App() {
     <div>
       <Navbar />
       <Routes>
+        
         <Route path="/" element={<Navigate to="/about" />} />
-        <Route path="/work" element={<Work />} />
+        <Route path="/portfolio" element={<About />} />
         <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cv" element={<Cv />} />
         
