@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Project.css';
 
-const TPR = () => {
+const GDS = () => {
   return (
     <div className="project-container">
 
@@ -32,4 +32,4 @@ const TPR = () => {
   );
 };
 
-export default TPR;
+export default GDS;

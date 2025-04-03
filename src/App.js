@@ -1,7 +1,7 @@
 // App.js
 import { React, useEffect } from 'react';
 import './index.css';
-import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom'; // ← add useLocation
 import Navbar from './components/Navbar';
 import Work from './pages/Work';
 import About from './pages/About';
@@ -19,8 +19,9 @@ import SJ23 from './pages/project/SJ23';
 
 function App() {
   const navigate = useNavigate();
+  const location = useLocation(); // ← Get current route
 
-  // 🐐 GoatCounter analytics script injection
+  // 🐐 Inject GoatCounter script on first load
   useEffect(() => {
     const script = document.createElement('script');
     script.async = true;
@@ -29,7 +30,17 @@ function App() {
     document.head.appendChild(script);
   }, []);
 
-  // Handle URL-based redirects
+  // 🐐 Trigger pageview on every route change
+  useEffect(() => {
+    if (window.goatcounter) {
+      window.goatcounter.count({
+        path: location.pathname,
+        title: document.title,
+      });
+    }
+  }, [location]);
+
+  // Handle redirect from URL query param (e.g. ?redirect=/cv)
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const redirectPath = params.get('redirect');
