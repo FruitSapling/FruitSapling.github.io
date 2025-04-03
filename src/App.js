@@ -20,6 +20,16 @@ import SJ23 from './pages/project/SJ23';
 function App() {
   const navigate = useNavigate();
 
+  // 🐐 GoatCounter analytics script injection
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.async = true;
+    script.setAttribute('data-goatcounter', 'https://fruitsapling.goatcounter.com/count');
+    script.src = 'https://gc.zgo.at/count.js';
+    document.head.appendChild(script);
+  }, []);
+
+  // Handle URL-based redirects
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const redirectPath = params.get('redirect');
@@ -32,14 +42,13 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        
         <Route path="/" element={<Navigate to="/about" />} />
         <Route path="/portfolio" element={<About />} />
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cv" element={<Cv />} />
-        
+
         {/* Specific Project Pages */}
         <Route path="/project/DfT" element={<DfT />} />
         <Route path="/project/TPR" element={<TPR />} />
