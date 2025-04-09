@@ -2,7 +2,7 @@
 import React from 'react';
 import './Cv.css'; // Import styles for the CV page
 
-const cvPdf = "/CV March 2025.pdf"; // Access PDF from public folder
+const cvPdf = "/CV April 2025.pdf"; // Access PDF from public folder
 
 const Cv = () => {
   return (
