@@ -25,7 +25,7 @@
   text-decoration: none;
   color: black;
   cursor: pointer;
-  height: 300px; /* Remove/adjust if you prefer auto-height */
+  height: 280px; /* Remove/adjust if you prefer auto-height */
 }
 
 /* Hover Effect */
@@ -55,12 +55,12 @@
   font-family: 'Montserrat', sans-serif;
   color: #373B44;
   font-weight: 400;
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 10px;
+  gap: 4px;
 }
 
 /* Title & Description */
@@ -76,19 +76,10 @@
   color: #555;
 }
 
-/* 5) Responsive Adjustments */
-@media (max-width: 992px) {
-  .work-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 768px) {
   .work-container {
+    padding: 16px;
+    gap: 16px;
     grid-template-columns: 1fr;
-  }
-
-  .card {
-    height: auto; /* Let cards expand on smaller screens if needed */
   }
 }

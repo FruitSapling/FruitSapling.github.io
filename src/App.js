@@ -16,6 +16,7 @@ import CA from './pages/project/CA';
 import CABO from './pages/project/CABO';
 import BEIS from './pages/project/BEIS';
 import SJ23 from './pages/project/SJ23';
+import Culina from './pages/project/Culina';
 
 function App() {
   const navigate = useNavigate();
@@ -68,6 +69,7 @@ function App() {
         <Route path="/project/CABO" element={<CABO />} />
         <Route path="/project/BEIS" element={<BEIS />} />
         <Route path="/project/SJ23" element={<SJ23 />} />
+        <Route path="/project/Culina" element={<Culina />} />
       </Routes>
     </div>
   );
