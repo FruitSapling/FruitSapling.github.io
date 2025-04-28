@@ -13,6 +13,10 @@ const Culina = () => {
         <p className="project-summary">
           I built Culina from scratch as a personal project to explore the intersection of cooking and technology. The app uses AI to scan your fridge / pantry and keep track of your ingredients, and to power the chatbot companion. Culina suggests recipes based on the ingredients you have at home, making meal planning easier and reducing food waste. The goal was to create a user-friendly interface that helps users answer the question "What can I cook with what I have?".
         </p>
+
+        <p className="project-summary">
+          More details to come about future iterations and the design process (design has changed significantly since this video!). In the meantime, check out the video below for a quick overview of the app.
+        </p>
       </div>
 
       <div className="video-container">
