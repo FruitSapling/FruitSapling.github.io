@@ -83,3 +83,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* === Personal Projects: force 3+ columns so lone cards size like the others === */
+.personal-projects-section .work-container {
+  /* preserve empty tracks rather than collapsing them */
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}

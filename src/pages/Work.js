@@ -60,16 +60,21 @@ const projects = [
     image: '/images/SJ23_thumbnail.png',
     link: '/project/SJ23'
   },
+  // ––––––––– New personal projects start here –––––––––
+  {
+    id: 'Culina',
+    client: 'Personal Project',
+    title: '🍲 AI-powered Cooking App',
+    description: 'A cooking companion using AI to help you decide what to cook.',
+    image: '/images/culina-logo.png',
+    link: '/project/Culina'
+  }
 ];
 
-// Define which projects are featured by their IDs.
 const featuredProjectIds = ['DfT', 'GDS', 'SJ23'];
-const featuredProjects = projects.filter(project =>
-  featuredProjectIds.includes(project.id)
-);
-const otherProjects = projects.filter(project =>
-  !featuredProjectIds.includes(project.id)
-);
+const featuredProjects = projects.filter(p => featuredProjectIds.includes(p.id));
+const otherProjects = projects.filter(p => !featuredProjectIds.includes(p.id) && p.client !== 'Personal Project');
+const personalProjects = projects.filter(p => p.client === 'Personal Project');
 
 const Work = () => {
   return (
@@ -78,7 +83,7 @@ const Work = () => {
       <div className="featured-projects-section">
         <h2 style={{ textAlign: 'center' }}>Featured Projects</h2>
         <div className="work-container">
-          {featuredProjects.map((project) => (
+          {featuredProjects.map(project => (
             <Link to={project.link} key={project.id} className="card">
               <img src={project.image} alt={project.client} />
               <div className="card-content">
@@ -94,9 +99,25 @@ const Work = () => {
       <div className="other-projects-section">
         <h2 style={{ textAlign: 'center' }}>Other Projects</h2>
         <div className="work-container">
-          {otherProjects.map((project) => (
+          {otherProjects.map(project => (
             <Link to={project.link} key={project.id} className="card">
               <img src={project.image} alt={project.client} />
+              <div className="card-content">
+                <p className="card-title"><strong>{project.title}</strong></p>
+                <p className="card-description">{project.description}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* Personal Projects Section */}
+      <div className="personal-projects-section">
+        <h2 style={{ textAlign: 'center' }}>Personal Projects</h2>
+        <div className="work-container">
+          {personalProjects.map(project => (
+            <Link to={project.link} key={project.id} className="card">
+              <img src={project.image} alt={project.title} />
               <div className="card-content">
                 <p className="card-title"><strong>{project.title}</strong></p>
                 <p className="card-description">{project.description}</p>

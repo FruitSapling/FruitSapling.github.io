@@ -1,48 +1,41 @@
-import React from "react";
-import ReactMarkdown from "react-markdown";
+import React from 'react';
+import '../Project.css';
 
-const blogPosts = [
-  {
-    title: "Initial Brainstorming",
-    date: "2025-04-12",
-    content: `
-# First Post
-
-I'm starting to sketch out the idea for this app. It helps people plan meals and cook healthy using Michael Pollan's food rules.
-
-Here's an early whiteboard sketch:
-
-![Whiteboard Sketch](https://i.imgur.com/your-image-id.jpg)
-
-I’m thinking of starting with a recipe search feature first.
-`
-  },
-  {
-    title: "Prototype Screenshots",
-    date: "2025-04-14",
-    content: `
-## Figma Screenshots
-
-Here's what the onboarding flow looks like now:
-
-![Figma Screenshot](https://i.imgur.com/your-second-image-id.jpg)
-
-Added a simple three-step onboarding to explain the value prop.
-`
-  }
-];
-
-export default function BlogPage() {
+const Culina = () => {
   return (
-    <div className="max-w-2xl mx-auto px-4 py-6">
-      <h1 className="text-3xl font-bold mb-8">Project Blog</h1>
-      {blogPosts.map((post, idx) => (
-        <div key={idx} className="mb-12 border-b pb-6">
-          <h2 className="text-xl font-semibold mb-1">{post.title}</h2>
-          <p className="text-gray-500 text-sm mb-4">{post.date}</p>
-          <ReactMarkdown>{post.content}</ReactMarkdown>
-        </div>
-      ))}
+    <div className="project-container">
+
+      <div className="project-content">
+        <h1>🍲 AI-powered Cooking App</h1>
+        <p>
+          A cooking companion, Culina helps you keep track of what ingredients you have and what you can make with them.
+        </p>
+        <p className="project-summary">
+          I built Culina from scratch as a personal project to explore the intersection of cooking and technology. The app uses AI to scan your fridge / pantry and keep track of your ingredients, and to power the chatbot companion. Culina suggests recipes based on the ingredients you have at home, making meal planning easier and reducing food waste. The goal was to create a user-friendly interface that helps users answer the question "What can I cook with what I have?".
+        </p>
+      </div>
+
+      <div className="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/OxJnARvfnI4" 
+          title="Culina App Overview"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      <a 
+        href="https://youtube.com/shorts/OxJnARvfnI4?feature=share" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="youtube-button"
+      >
+        Watch on YouTube
+      </a>
+
     </div>
   );
-}
+};
+
+export default Culina;
