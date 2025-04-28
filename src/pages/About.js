@@ -29,6 +29,14 @@ const featuredProjects = [
     image: '/images/SJ23_thumbnail.png',
     link: '/project/SJ23'
   },
+  {
+    id: 'Culina',
+    client: 'Personal Project',
+    title: '🍲 AI-powered Cooking App',
+    description: 'A cooking companion using AI to help you decide what to cook.',
+    image: '/images/culina-logo.png',
+    link: '/project/Culina'
+  }
 ];
 
 const About = () => {
@@ -71,10 +79,6 @@ const About = () => {
       {/* FEATURED PROJECTS SECTION */}
       <div className="featured-projects-section">
         <h2>Featured Projects</h2>
-        {/* 
-          Use the exact same .work-container from WorkCard.css 
-          so the cards have identical spacing & layout
-        */}
         <div className="work-container">
           {featuredProjects.map((project) => (
             <Link to={project.link} key={project.id} className="card">
