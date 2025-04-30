@@ -85,7 +85,7 @@ const About = () => {
               <img src={project.image} alt={project.client} />
               <div className="card-content">
                 <p className="card-title">
-                  <strong>{project.title}</strong>
+                  {project.title}
                 </p>
                 <p className="card-description">{project.description}</p>
               </div>

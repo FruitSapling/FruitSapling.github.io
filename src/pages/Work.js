@@ -87,7 +87,7 @@ const Work = () => {
             <Link to={project.link} key={project.id} className="card">
               <img src={project.image} alt={project.client} />
               <div className="card-content">
-                <p className="card-title"><strong>{project.title}</strong></p>
+                <p className="card-title">{project.title}</p>
                 <p className="card-description">{project.description}</p>
               </div>
             </Link>
@@ -103,7 +103,7 @@ const Work = () => {
             <Link to={project.link} key={project.id} className="card">
               <img src={project.image} alt={project.client} />
               <div className="card-content">
-                <p className="card-title"><strong>{project.title}</strong></p>
+                <p className="card-title">{project.title}</p>
                 <p className="card-description">{project.description}</p>
               </div>
             </Link>
@@ -119,7 +119,7 @@ const Work = () => {
             <Link to={project.link} key={project.id} className="card">
               <img src={project.image} alt={project.title} />
               <div className="card-content">
-                <p className="card-title"><strong>{project.title}</strong></p>
+                <p className="card-title">{project.title}</p>
                 <p className="card-description">{project.description}</p>
               </div>
             </Link>
